@@ -70,10 +70,12 @@ class TV:
                 self.canal -= 1
 
     # Contador
-    def getNumTV(self):
+    @classmethod
+    def getNumTV(cls):
         return TV.numTV
 
-    def setNumTV(self, numTV):
+    @classmethod
+    def setNumTV(cls, numTV):
         TV.numTV = numTV
 
     # Estado
